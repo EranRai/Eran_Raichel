@@ -1,0 +1,28 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;   
+    padding: 10px;
+}
+h1 {
+    color: blueviolet;
+}
+
+#form_h1 {
+    color: burlywood;
+}
+
+.classA {
+    background-color: beige;
+    color: black;
+    display: block;
+}
+
+div a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    border: 1px; color: black;
+    width: 50px;
+    background-color: antiquewhite;
+    text-transform: capitalize;
+}
