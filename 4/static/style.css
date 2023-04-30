@@ -1,0 +1,76 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--Sand);
+    padding: 5vw;
+    border: 1px solid var(--Sand);
+}
+
+:root {
+    --MyDarkBrown: #edd1ad; 
+    --MyBrown: #c18f63;
+    --Sand: #eeeee4;
+}
+
+@font-face {
+    font-family: Suez;
+    src: url("Suez_One/SuezOne-Regular.ttf");
+}
+
+body {
+    background-color: var(--MyBrown);
+    border: 3px solid var(--Sand);
+}
+
+.type2 {
+    border: none;
+}
+
+body.type2 {
+    background-image: url("page2.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+}
+
+h1 {
+    font-family: Suez;
+    animation-name: Disapear;
+    animation-duration: 1s;
+    animation-iteration-count: 5;
+}
+
+.GridContainer {
+    display: grid;
+    grid-template-areas:
+    'top_left top_middle top_right'
+    'middle_left middle_left middle_left'
+    'bottom_left bottom_left bottom_right'
+    ;
+}
+
+.item1 {
+    grid-area: top_left;
+}
+
+.item2 {
+    grid-area: top_right;
+}
+
+.item3 {
+    grid-area: middle_left;
+}
+
+.item4 {
+    grid-area: bottom_left;
+}
+
+.item5 {
+    grid-area: bottom_right;
+    text-align: center;
+}
+
+@keyframes Disapear {
+    0% {color: white;}
+    50% {color: rgba(255, 255, 255, 0);}
+    100% {color: white;}
+}
