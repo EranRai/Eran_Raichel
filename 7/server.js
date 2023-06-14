@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 const sql = require('./DB/DB');
 const CRUD = require('./DB/CRUD')
 const cookie = require('cookie-parser');
-const port = 2020;
+const port = 2023;
 app.use(express.static(path.join(__dirname, "static")));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
